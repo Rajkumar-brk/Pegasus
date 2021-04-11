@@ -15,7 +15,7 @@
      <title>Pegasus Attendance Management System</title>
      <style>
         body {
-          background-image: url('img/BG1.jpeg');
+          background-image: url('img_girl.jpg');
           background-repeat: no-repeat;
           background-attachment: fixed; 
           background-size: 100% 100%;
@@ -30,14 +30,15 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <a class="navbar-brand mr-auto" href="#">FACULTY DASHBOARD</a>
             <a class="navbar-brand mr-auto" href="#"><img src="img/pegasus.png" height="30" width="41"></a>
-        
+           
            <div class="collapse navbar-collapse" id="Navbar">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
-               
-                <li class="nav-item"><a class="nav-link" href="https://ruthwikreddi.blogspot.com/2021/02/pegasus-version-3.html"><span class="fa fa-list fa-lg"></span>Blog</a></li>
-              
+                <li class="nav-item"><a class="nav-link" href="./facultyDB.html"><span class="fa fa-pencil fa-lg"></span> Mark Attendance</a></li>
+                <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-search fa-lg"></span> Search Student </a></li>
+                <li class="nav-item"><a class="nav-link" href="./faculty-change-password.html"><span class="fa fa-key fa-lg"></span> Change Password</a></li>
+
             </ul> 
         </div>
                          
@@ -49,47 +50,15 @@
             <div class="row row-header"> 
                 <div class="col-12 col-sm-6">
                     <h1>Pegasus Secondary School</h1>
-                   
+                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
                 <div class="col-12 col-sm align-self-center">
                     <img src="img/pegasus.png"  width="200" height="120"">
                 </div>
-                
-                <button onclick="document.getElementById('id01').style.display='block'" style="width: 150px; height: max-content;">Login</button>
-</div>
             </div>
         </div>
     </header >
-    <div class="container">
-    
-
-    <div id="id01" class="modal">
-  
-        <form class="modal-content animate" action="/action_page.php" method="post">
-          <div class="imgcontainer">
-            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-         
-          </div>
-      
-          <div class="container">
-            <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
-      
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
-              
-            <button type="submit">Login</button>
-            <label>
-              <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
-          </div>
-      
-          <div class="container" style="background-color:#f1f1f1">
-            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-            <span class="psw">Forgot <a href="#">password?</a></span>
-          </div>
-        </form>
-      </div>
+ 
 
   
     <footer class="footer"> 
@@ -104,7 +73,7 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-                <div class="col-7 col-sm-5">
+                <div class="sol-7 col-sm-5">
                     <h5>Our Address</h5>
                     <address>
 		              121, Clear Water Bay Road<br>
@@ -141,17 +110,6 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        // Get the modal
-        var modal = document.getElementById('id01');
-        
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-        </script>
 </body>
 
 </html>
